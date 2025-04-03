@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formularios</title>
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <h1>ITSQMET</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="semantica.html">Semántica</a>
+            <a href="forms.html">Formularios</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Introducción a formularios</h2>
+        <section>
+            <form>
+                <h3>Ingrese sus datos</h3>
+                <label> Nombre: <input type="text" placeholder="Ingrese su nombre" required autofocus></label><br>
+                <label> Correo: <input type="email" placeholder="ejemplo@dominio.com"></label><br>
+                <label> Contraseña: <input type="password" minlength="8" maxlength="16"></label><br>
+                <label> Fecha de nacimiento: <input type="date"></label><br>
+                <label> Hora de almuerzo: <input type="time"></label><br>
+                <label> Color favorito <input type="color"> </label><br>
+                <label> Número favorito: <input type="number" min="1" max="10"></label><br>
+                <label> Teléfono: <input type="tel" placeholder="+593 987 654 321"></label><br>
+                <label> Facebook: <input type="url" placeholder="https://www.facebook.com/usuario"></label><br>
+                <label> Número de seguidores: <input type="range" min="1" max="1000"></label></label><br>
+                <label> CV: <input type="file" accept="application/pdf"></label><br>
+                <label> Descripción: <textarea rows="4"></textarea></label><br>
+                <fieldset>
+                    <legend>Genero</legend>
+                    <label> Masculino <input type="radio" name="genero" value="masculino"></label><br>
+                    <label> Femenino <input type="radio" name="genero" value="femenino"></label><br>
+                    <label> Otro <input type="radio" name="genero" value="otro"></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Idiomas</legend>
+                    <label> Español <input type="checkbox" name="idiomas" value="espanol"></label>
+                    <label> Inglés <input type="checkbox" name="idiomas" value="ingles"></label>
+                    <label> Francés <input type="checkbox" name="idiomas" value="frances"></label>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
